@@ -143,8 +143,66 @@ switch (cor)
 */
 
 //ENUM == enumerador
+/*
 enum Cor
 {
     azul, verde, amarelo, vermelho
 }
+
+Cor corFavorita = Cor.amarelo;
+
+Console.WriteLine(corFavorita);
+
+*/
+// -------------ESTRUTURAS DE REPETICAO-------------------------------
+// 4 PRINCIPAIS: WHILE / FOR / FOREACH  DO WHILE
+//---------------------------------------------------------------------
+//while
+/*
+Console.WriteLine("digite o numero para ver a tabuada:");
+
+int cont = 1;
+int tab = int.Parse(Console.ReadLine());
+while (cont <= 10)//enquanto for verdade faça
+{
+    int total =  cont * tab;  
+    Console.WriteLine($"{tab} * {cont} = {total}");
+    cont++;
+} 
+*/
+//-----------------------------------------------------------------------
+//DO WHILE
+/*
+do
+{
+    Console.WriteLine("Teste");
+} while (5>10);
+*/
+
+//------------------------------------------------------------------------
+//FOREACH percorre um array
+/*
+string[] palavras = {"Emerson","Teste","Node","C#","Visual Studio", "Youtube" };
+int cont = 1;
+Console.WriteLine("Lista de palavras: ");
+
+foreach (string impPalavras in palavras)
+{
+    Console.WriteLine($"{cont} - {impPalavras}");
+    cont++;
+}
+*/
+
+//FOR
+/*
+string[] palavras = { "Emerson", "Teste", "Node", "C#", "Visual Studio", "Youtube" };
+
+
+for(int cont = 0; cont < palavras.Length; cont++)
+{
+    Console.WriteLine(palavras[cont]);
+};
+*/
+
+
 
